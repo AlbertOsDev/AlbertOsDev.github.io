@@ -18,7 +18,9 @@ Muestra la lista de commit del mas reciente al más antigüo
 git log --oneline
 
 otro dato mas
-
+git remote add origin https://github.com/AlbertOsDev/AlbertOsDev.github.io.git
+git branch -M main
+git push -u origin main
 
 
 https://www.youtube.com/watch?v=sLTNgxxSBR4
