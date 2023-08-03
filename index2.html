@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Albert Osinaga Curriculum Vitae</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Inicio</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Trabajos</span></a>
+						<a href="#contact" class="icon solid fa-address-card"><span>Contacto</span></a>
+						<a href="#location" class="icon solid fa-globe"><span>Ubicación</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Osinaga García Albert César</h1>
+									<p>Curriculum Vitae</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.png" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Trabajos</h2>
+								</header>
+								<p>
+									Aqui vendran algunos de los trabajos que realice en todo el ambito de mis conocimientos.
+                                    desde el año 2012 que inicie mis estudios e inicie con los servicios que preste a distintas empresas en areas de mis conocimientos.
+								</p>
+								<section>
+									<!-- Imagen Inicio -->
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<img class="myImg" alt="Nombre de titulo" src="images/pic01.jpg" alt="">
+											<p>Nombre de titulo</p>
+											<!-- The Modal -->
+												<div class="myModal" class="modal">
+													<span class="close">&times;</span>
+													<img class="modal-content" id="img01">
+													<div id="caption"></div>
+												 </div>
+										</div>
+									</div>
+									<!-- Imagen Fin -->									
+									<!-- Imagen Inicio -->
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<img class="myImg" alt="Nombre de titulo" src="images/pic02.jpg" alt="">
+											<p>Nombre de titulo</p>
+											<!-- The Modal -->
+												<div class="myModal" class="modal">
+													<span class="close">&times;</span>
+													<img class="modal-content" id="img01">
+													<div id="caption"></div>
+												 </div>
+										</div>
+									</div>
+									<!-- Imagen Fin -->									
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contactame</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Nombre" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Correo " />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Asunto" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Mensaje" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Enviar mensaje" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+						<!-- location -->
+						<article id="location" class="panel">
+							<header>
+								<h2>Ubicacion</h2>
+							</header>
+							<div class="row">
+								<div class="col-12">
+									<img src="images/pic12.jpg" alt="">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptas adipisci laborum, quisquam nobis quibusdam dicta earum rerum magni nihil.</p>
+								</div>
+							</div>
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; @lbertOS</li><li>Diseñado por <a href="#">Osinaga García Albert César</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/mio.js"></script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementsByClassName("myImg");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+				</script>
+
+	</body>
+</html>

@@ -94,3 +94,14 @@ La rama gh-pages sólo se utilizará para subir el proyecto a GitHub pages y ten
 https://www.youtube.com/watch?v=sLTNgxxSBR4
 https://www.youtube.com/watch?v=L_lWQZNhN7w
 https://bluuweb.dev/03-git/02-git.html
+
+
+
+
+
+
+
+
+
+Crear Modal
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
