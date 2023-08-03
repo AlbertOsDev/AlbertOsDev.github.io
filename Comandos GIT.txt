@@ -22,19 +22,63 @@ git remote add origin https://github.com/AlbertOsDev/AlbertOsDev.github.io.git
 git branch -M main
 git push -u origin main
 
+Clonando un repositorio existente
+$ git clone https://github.com/libgit2/libgit2
+Esto crea un directorio llamado libgit2, inicializa un directorio .git en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión. 
+$ git clone https://github.com/libgit2/libgit2 mylibgit
+Ese comando hace lo mismo que el anterior, pero el directorio de destino se llamará mylibgit.
 
-Para actualizar cambios en github pages ***********************
 
+**********Para actualizar cambios en github pages ***********************
+https://gist.github.com/caprosset/f74506f4fd10ab60b2c689d2cf216735
 
-Desde la terminal, nos situamos dentro de la carpeta raíz de nuestro proyecto y ejecutamos los siguientes comandos:
+1.- Desde la terminal, nos situamos dentro de la carpeta raíz de nuestro proyecto y ejecutamos los siguientes comandos:
 git add .
 git commit -m "Deploy the app with GitHub Pages"
 git push origin master 
 
-Crear una nueva rama gh-pages en nuestro proyecto
+2.- Crear una nueva rama gh-pages en nuestro proyecto
 (importante respectar este nombre): gh-pages
 git checkout -b gh-pages
 Esto creará una nueva rama en nuestro proyecto (en local) y nos colocará automáticamente en esta nueva rama. Esta rama servirá para despliegar nuestro proyecto y subirlo a github pages.
+Para ver todas la ramas que tiene el proyecto:
+git branch
+
+3.- Una vez allí, nos desplazamos hacia abajo en la sección GitHub Pages. (ver img "Github-actualizarpages.png")
+Hacemos clic en el menú desplegable, debajo del título Source.
+Seleccionamos como fuente la rama gh-pages, haciendo clic en la rama gh-pages.
+Esto publicará el proyecto y nos proporcionará el enlace de la versión online del proyecto.
+Normalmente, si la rama gh-pages fue creada anteriormente, los 4 pasos anteriores serán hechos automáticamente.
+
+
+4.- Continuar trabajando en el proyecto desde la rama master o main
+La rama gh-pages sólo se utilizará para implementar el proyecto a GitHub pages y subirlo online.
+nos cambiamos de vuelta a la rama master (o main, dependiendo cómo se llame)
+git checkout master
+
+
+5.- Después de este paso podemos continuar trabajando en el proyecto.
+Subir el proyecto actualizado de nuevo a GitHub Pages
+Cada vez que deseamos subir/despliegar las actualizaciones que realizamos en el proyecto, debemos seguir los siguientes pasos:
+En la rama master (o main), guardamos todos los cambios y creamos un nuevo commit:
+git add .
+git commit -m "Deploy the app with GitHub Pages"
+git push origin master
+
+6.- Una vez hecho, nos colocamos en la rama gh-pages:
+git checkout gh-pages
+Traemos todos los cambios (incluyendo el commit nuevo) de la rama master a la rama gh-pages:
+git merge master
+Esto copiará todos los cambios que existen en la rama master (o main) y los pegará en la rama en la que estamos actualmente gh-pages.
+
+7.- Subimos la rama actualizada (gh-pages) a GitHub.
+git push origin gh-pages
+Esto despliegará el nuevo código y lo subirá online.
+Después pushear del código nuevo y antes de continuar con el proyecto, nos cambiamos a la rama master.
+git checkout master
+La rama gh-pages sólo se utilizará para subir el proyecto a GitHub pages y tenerlo online.
+
+
 
 
 
