@@ -23,6 +23,30 @@ git branch -M main
 git push -u origin main
 
 
+Para actualizar cambios en github pages ***********************
+
+
+Desde la terminal, nos situamos dentro de la carpeta raíz de nuestro proyecto y ejecutamos los siguientes comandos:
+git add .
+git commit -m "Deploy the app with GitHub Pages"
+git push origin master 
+
+Crear una nueva rama gh-pages en nuestro proyecto
+(importante respectar este nombre): gh-pages
+git checkout -b gh-pages
+Esto creará una nueva rama en nuestro proyecto (en local) y nos colocará automáticamente en esta nueva rama. Esta rama servirá para despliegar nuestro proyecto y subirlo a github pages.
+
+
+
+
+
+
+
+
+
+
+
+
 https://www.youtube.com/watch?v=sLTNgxxSBR4
 https://www.youtube.com/watch?v=L_lWQZNhN7w
 https://bluuweb.dev/03-git/02-git.html
