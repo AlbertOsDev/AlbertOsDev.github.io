@@ -83,3 +83,31 @@
       width: 100%;
     }
   }
+
+
+
+
+  /* mi codigo*/
+  a#enviar{
+    text-decoration: none;
+    /*background-color: rgb(2, 1, 1);*/
+    padding: 8px 25px;
+    border-color: #075E54;
+    border-style: dotted;
+  }
+  a#enviar:hover{
+    cursor: pointer;
+    color: #075E54;
+  }
+  #whatsapp {
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    color: #075E54;
+ }
+ svg {
+  width:25px;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
