@@ -90,14 +90,16 @@
   /* mi codigo*/
   a#enviar{
     text-decoration: none;
-    /*background-color: rgb(2, 1, 1);*/
+    background-color: #128C7E;
+    color: white;
     padding: 8px 25px;
     border-color: #075E54;
     border-style: dotted;
   }
   a#enviar:hover{
     cursor: pointer;
-    color: #075E54;
+    background-color: white;
+    color: #128C7E;
   }
   #whatsapp {
     position: absolute;
@@ -105,7 +107,10 @@
     left: 20px;
     margin: 0;
     padding: 0;
-    color: #075E54;
+    color: white;
+ }
+ a#whatsapp:hover{
+  color: #128C7E;
  }
  svg {
   width:25px;

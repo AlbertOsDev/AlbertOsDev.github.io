@@ -14,7 +14,7 @@ document.querySelector('form').addEventListener('submit', e =>{
 function saludo(){
     var nombre = document.getElementById("nombre").value //Captura el input de nombre
     var mensaje = document.getElementById("mensaje").value //Captura el textarea del mensaje
-    var enlace = "https://wa.me/59178752135?text=" +"*"+ nombre +"*"+ "%20" + mensaje
+    var enlace = "https://wa.me/59178752135?text="+"Hola soy"+"*"+ nombre +"*"+ "%20" + mensaje
     document.getElementById("enviar").href =enlace //se asigna el enlace href con el mensaje
     var c = document.getElementById("enviar").href
    // Agregar atributo htmll
@@ -23,5 +23,5 @@ function saludo(){
     //Agregar atributo htmll
    // var c = document.querySelector('a').href
 
-    alert(c)
+   // alert(c)
 }
