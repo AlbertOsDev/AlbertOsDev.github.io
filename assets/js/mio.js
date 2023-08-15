@@ -25,3 +25,23 @@ function saludo(){
 
    // alert(c)
 }
+
+$(document).ready(function() {
+    // Abrir modal al hacer clic en una imagen
+    $(".imagen-modal").click(function() {
+      var imagenSrc = $(this).attr("src");
+      var informacion = $(this).data("informacion");
+  
+      $("#modal-imagen").attr("src", imagenSrc);
+      $("#modal-informacion").text(informacion);
+  
+      $("#modal").fadeIn();
+    });
+  
+    // Cerrar modal al hacer clic en el botón de cierre o fuera del contenido
+    $("#modal, #modal-cerrar").click(function(event) {
+      if (event.target === this) {
+        $("#modal").fadeOut();
+      }
+    });
+  });
